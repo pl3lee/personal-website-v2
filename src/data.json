@@ -1,0 +1,27 @@
+{
+  "experience": [
+    {
+      "company": "University of Waterloo",
+      "position": "Lead Developer",
+      "date": "Jan 2024 - May 2024",
+      "description": "Developed a Next.js-based web platform for a figures of speech research group, enabling user submissions and annotations of figure instances.",
+      "keypoints": [
+        "Revamped the CI/CD process using GitLab pipelines, Docker, and Docker Compose, automating and accelerating testing, building, and deployment phases, and saving over 30 minutes per deployment.",
+        "Established a robust staging environment to streamline testing and quality assurance, ensuring a more reliable and efficient development workflow.",
+        "Hosted weekly stand-up meetings, conducted code reviews for merge requests, and set up a documentation site with a CD pipeline to ensure proper project documentation."
+      ]
+    },
+    {
+      "company": "University of Waterloo",
+      "position": "Full Stack Developer",
+      "date": "Sept 2023 - Dec 2023",
+      "description": "Developed a Next.js-based web platform for a figures of speech research group, enabling user submissions and annotations of figure instances.",
+      "keypoints": [
+        "Implemented advanced features including rich text support and dynamic highlighting functionality for annotations.",
+        "Reduced page load time by 80% by consolidating data retrieval to a single API call with server-side props, utilizing Context API for efficient data distribution, and implementing pagination to minimize data overload.",
+        "Engineered and deployed robust backend endpoints for the Golang-based REST API with MySQL database.",
+        "Authored comprehensive tests using Jest and React Testing Library to ensure code integrity and functionality."
+      ]
+    }
+  ]
+}

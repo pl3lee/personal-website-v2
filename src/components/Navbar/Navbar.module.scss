@@ -1,0 +1,29 @@
+@import '/src/app/theme.scss';
+@import '/src/app/breakpoints.scss';
+
+.root {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  justify-content: center;
+  background-color: $background-color;
+  color: $foreground-color2;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #18181b, #18181b 35%, rgba(24,24,27,0.5));
+  backdrop-filter: blur(0.25rem); // backdrop-blur-sm
+  filter: saturate(200%); // saturate-200
+}
+
+.linksContainer {
+  display: flex;
+  max-width: $md;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
