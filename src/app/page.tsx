@@ -5,6 +5,7 @@ import data from '@/data.json';
 import Link from 'next/link';
 import { Projects } from '@/components/Projects/Projects';
 import { motion } from 'framer-motion';
+import { Github, Linkedin } from 'lucide-react';
 
 export default function Home() {
   console.log(data);
@@ -102,6 +103,29 @@ export default function Home() {
             <h2>University of Waterloo</h2>
             <div className='text-sm'>Honours Bachelor of Mathematics</div>
             <div className='text-sm'>Sept 2020 - Aug 2024</div>
+          </div>
+        </div>
+      </motion.section>
+
+      <motion.section className={styles.connect} variants={item}>
+        <SectionHeader>
+          <h1>Let&apos;s Connect</h1>
+        </SectionHeader>
+        <div className={styles.connectContainer}>
+          <p>
+            If you want to get in touch with me, feel free to reach out on
+            social media or send me an email.
+          </p>
+          <div className={styles.socialMediaIcons}>
+            <Link href='https://github.com/pl3lee' target='_blank'>
+              <Github />
+            </Link>
+            <Link
+              href='https://www.linkedin.com/in/billy-lee-9892a3200/'
+              target='_blank'
+            >
+              <Linkedin />
+            </Link>
           </div>
         </div>
       </motion.section>

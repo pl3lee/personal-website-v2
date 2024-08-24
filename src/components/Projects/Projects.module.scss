@@ -1,3 +1,6 @@
+@import '/src/app/breakpoints';
+@import '/src/app/theme.scss';
+
 .root {
   display: flex;
   flex-direction: column;
@@ -15,7 +18,7 @@
   position: relative;
   transition: background-color 0.3s ease;
   &:hover {
-    background-color: #f5f5f50a;
+    background-color: $hover-background-color;
     svg {
       transform: translateX(0.3rem);
     }
