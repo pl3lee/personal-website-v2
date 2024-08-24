@@ -10,10 +10,11 @@
   z-index: 1000;
   width: 100%;
   justify-content: center;
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
   background: linear-gradient(to bottom, $background-color, $background-color 35%, rgba(24,24,27,0.5));
   backdrop-filter: blur(0.25rem);
 }
+
 
 .linksContainer {
   display: flex;
@@ -23,14 +24,18 @@
   justify-content: flex-end;
   align-items: center;
   gap: 0.5rem;
-
   a {
-    padding: 0.5rem;
     border-radius: 0.5rem;
     transition: all 0.3s ease;
     &:hover {
       background-color: $hover-background-color;
       color: $foreground-color1;
     }
+  }
+}
+
+@media (max-width: $xs) {
+  .root {
+    padding: 2rem 1rem;
   }
 }
