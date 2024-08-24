@@ -6,27 +6,26 @@
   flex-direction: column;
   align-items: center;
   max-width: $md;
-  color: $foreground-color1;
   padding-top: 8rem;
   padding-bottom: 2rem;
+  gap: 4rem;
+
+  section {
+    width: 100%;
+  }
 }
 
 .about {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.5rem;
-  h1 {
-    color: $foreground-color1;
-    font-weight: bold;
-  }
-  h2 {
-    color: $foreground-color2;
-    font-weight: bold;
-  }
-  p {
-    color: $foreground-color3;
-  }
+  gap: 2rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .introduction {
@@ -34,4 +33,24 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
+}
+
+.experience {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+
+.latestExperienceContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  div {
+    font-size: 0.9rem;
+  }
 }

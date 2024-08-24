@@ -12,6 +12,7 @@ html {
   margin: 0;
   padding: 0;
   background-color: $background-color;
+  color: $foreground-color3;
 }
 
 body {
@@ -28,3 +29,17 @@ body {
     text-wrap: balance;
   }
 }
+
+h1 {
+  color: $foreground-color1;
+}
+
+h2 {
+  color: $foreground-color2;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+
