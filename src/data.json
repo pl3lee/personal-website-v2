@@ -27,11 +27,13 @@
   "projects": [
     {
       "name": "Instagram Clone",
-      "description": "A full-stack Instagram clone built with Next.js, Express.js, MongoDB, Socket.io, and Firebase Auth."
+      "description": "A full-stack Instagram clone built with Next.js, Express.js, MongoDB, Socket.io, and Firebase Auth.",
+      "slug": "instagram-clone"
     },
     {
       "name": "Coding Theory Calculator",
-      "description": "A web application that performs various coding theory calculations, including hamming distance, syndrome decoding, C24 decoding, and more."
+      "description": "A web application that performs various coding theory calculations, including hamming distance, syndrome decoding, C24 decoding, and more.",
+      "slug": "coding-theory-calculator"
     }
   ]
 }
