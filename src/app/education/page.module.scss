@@ -9,6 +9,7 @@
   padding-top: 8rem;
   padding-bottom: 8rem;
   gap: 4rem;
+  width: 100%;
 
   section {
     width: 100%;
@@ -16,28 +17,8 @@
   }
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 2rem;
-}
 
-.title {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.introduction {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 2rem;
-  padding: 0rem 1rem;
-}
-
-.experience, .education, .connect, .projects {
+.education {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -46,7 +27,7 @@
 }
 
 
-.latestExperienceContainer, .educationContainer, .connectContainer {
+.educationContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -54,11 +35,4 @@
   align-items: flex-start;
   gap: 1rem;
   padding: 0rem 1rem;
-}
-
-
-
-.socialMediaIcons {
-  display: flex;
-  gap: 1rem;
 }

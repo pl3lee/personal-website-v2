@@ -7,7 +7,7 @@ import { Projects } from '@/components/Projects/Projects';
 import { motion } from 'framer-motion';
 import { Github, Linkedin } from 'lucide-react';
 
-export default function Home() {
+export default function Summary() {
   console.log(data);
   const container = {
     hidden: { y: 20, opacity: 0 },
@@ -44,6 +44,7 @@ export default function Home() {
             <h1>Billy Lee</h1>
             <h2>Full Stack Developer</h2>
           </div>
+          <Link href='/resume.pdf'>View my Resume</Link>
         </SectionHeader>
         <div className={styles.introduction}>
           <p>
@@ -83,7 +84,7 @@ export default function Home() {
           <h1>Projects</h1>
           <Link href='/projects'>See all projects</Link>
         </SectionHeader>
-        <Projects projects={data.projects} numProjects={2} />
+        <Projects projects={data.projects.slice(0, 2)} />
       </motion.section>
 
       <motion.section className={styles.education} variants={item}>

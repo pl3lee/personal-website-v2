@@ -15,12 +15,30 @@
       "company": "University of Waterloo",
       "position": "Full Stack Developer",
       "date": "Sept 2023 - Dec 2023",
-      "description": "Developed a Next.js-based web platform for a figures of speech research group, enabling user submissions and annotations of figure instances.",
       "keypoints": [
         "Implemented advanced features including rich text support and dynamic highlighting functionality for annotations.",
         "Reduced page load time by 80% by consolidating data retrieval to a single API call with server-side props, utilizing Context API for efficient data distribution, and implementing pagination to minimize data overload.",
         "Engineered and deployed robust backend endpoints for the Golang-based REST API with MySQL database.",
         "Authored comprehensive tests using Jest and React Testing Library to ensure code integrity and functionality."
+      ]
+    },
+    {
+      "company": "Hewlett Packard Enterprise",
+      "position": "Software Developer Intern",
+      "date": "May 2023 - Aug 2023",
+      "keypoints": [
+        "Developed and launched a React.js-based demo portal as the sole developer, effectively showcasing HPE GreenLake solutions and streamlining the demo process by at least 50%.",
+        "Orchestrated the automation and optimization of demo processes, utilizing Python and Bash scripts, and managed VM environments to ensure efficient and effective demo execution, reducing setup time by approximately 80%."
+      ]
+    },
+    {
+      "company": "Bolee Machine Tool Ltd.",
+      "position": "Software Developer Intern",
+      "date": "Apr 2023 - May 2023",
+      "keypoints": [
+        "Tackled the challenge of time-consuming manual product entries on the company's WordPress e-commerce site, previously reliant on a lengthy admin GUI process.",
+        "Revolutionized product management by developing a Python-based automation tool using Selenium for the company's WordPress e-commerce site; achieved a remarkable 99% reduction in time required for bulk price updates.",
+        "Managed the company's server system by configuring the VPN server and upgrading the storage of the NAS server."
       ]
     }
   ],
@@ -28,12 +46,32 @@
     {
       "name": "Instagram Clone",
       "description": "A full-stack Instagram clone built with Next.js, Express.js, MongoDB, Socket.io, and Firebase Auth.",
-      "slug": "instagram-clone"
+      "slug": "instagram-clone",
+      "link": "https://github.com/pl3lee/instagram-clone"
     },
     {
       "name": "Coding Theory Calculator",
       "description": "A web application that performs various coding theory calculations, including hamming distance, syndrome decoding, C24 decoding, and more.",
-      "slug": "coding-theory-calculator"
+      "slug": "coding-theory-calculator",
+      "link": "https://github.com/pl3lee/coding-theory-calculator"
+    },
+    {
+      "name": "Sai Kung Sailing",
+      "description": "A website for a small boat rental business.",
+      "slug": "sai-kung-sailing",
+      "link": "https://sksail.com"
+    },
+    {
+      "name": "Recipe App",
+      "description": "A recipe web application built using Next.js, Express.js, and MongoDB.",
+      "slug": "recipe-app",
+      "link": "https://github.com/pl3lee/Recipe-App"
+    },
+    {
+      "name": "Biquadris",
+      "description": "A multiplayer Tetris game built using C++, using design patterns such as MVC and Factory Method.",
+      "slug": "biquadris",
+      "link": "https://github.com/pl3lee/Biquadris"
     }
   ]
 }

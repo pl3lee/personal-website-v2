@@ -3,16 +3,10 @@ import styles from './Projects.module.scss';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
-export function Projects({
-  projects,
-  numProjects,
-}: {
-  projects: ProjectType[];
-  numProjects: number;
-}) {
+export function Projects({ projects }: { projects: ProjectType[] }) {
   return (
     <div className={styles.root}>
-      {projects.slice(0, numProjects).map((project: ProjectType) => (
+      {projects.map((project: ProjectType) => (
         <Project project={project} key={project.name} />
       ))}
     </div>

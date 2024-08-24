@@ -3,6 +3,7 @@
 
 .root {
   display: flex;
+  height: 100%;
   width: 100%;
   justify-content: center;
   background-color: $background-color;
@@ -15,7 +16,7 @@
   width: 100%;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-end;
   font-size: 0.9rem;
   padding-left: 2rem;
 }
