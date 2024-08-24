@@ -21,6 +21,8 @@
   width: 95%;
 }
 
+$transition-time: 0.2s;
+
 .arrow {
   cursor: pointer;
   height: 1rem;
@@ -71,20 +73,22 @@
     }
   }
   
-  &:hover & {
+  &:active {
+    transform: translateX(-50%) translateY(-50%) scale(0.9);
+  }
+}
+
+.project {
+  &:hover &arrow {
     
     &Top:after {
       left: 0;
       transition-delay: $transition-time;
     }
-
+  
     &Bottom:after {
       right: 0;
       transition-delay: 0s;
     }
-  }
-  
-  &:active {
-    transform: translateX(-50%) translateY(-50%) scale(0.9);
   }
 }
