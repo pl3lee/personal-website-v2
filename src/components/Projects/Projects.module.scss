@@ -2,93 +2,46 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 1rem;
 }
 
 .project {
   display: flex;
   flex-direction: row;
   width: 100%;
-  border-bottom: 1px solid #8b8b8b2a;
-  padding-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #f5f5f50a;
+    svg {
+      transform: translateX(0.3rem);
+    }
+    &:after {
+      background-color: #f5f5f500; 
+      transition: background-color 0.3s ease;
+    }
+  }
+  svg {
+    transform: translateX(0rem);
+    transition: transform 0.3s ease;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 1rem; 
+    width: calc(100% - 2rem); 
+    height: 1px; 
+    background-color: #f5f5f50a; 
+    border-radius: 0; 
+  }
 }
 
 .projectInfo {
   display: flex;
   flex-direction: column;
   width: 95%;
-}
-
-$transition-time: 0.2s;
-
-.arrow {
-  cursor: pointer;
-  height: 1rem;
-  transform: translateX(-50%) translateY(-50%);
-  transition: transform .1s;
-  width: 1rem;
-  
-  $transition-time: .15s;
-  
-  &Top,
-  &Bottom {
-    background-color: #666;
-    height: 4px;
-    left: -5px;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    
-    &:after {
-      background-color: #fff;
-      content: '';
-      height: 100%;
-      position: absolute;
-      top: 0;
-      transition: all $transition-time;
-    }
-  }
-  
-  &Top {
-    transform: rotate(45deg);
-    transform-origin: bottom right;
-    
-    &:after {
-      left: 100%;
-      right: 0;
-      transition-delay: 0s;
-    }
-  }
-  
-  &Bottom {
-    transform: rotate(-45deg);
-    transform-origin: top right;
-    
-    &:after {
-      left: 0;
-      right: 100%;
-      transition-delay: $transition-time;
-    }
-  }
-  
-  &:active {
-    transform: translateX(-50%) translateY(-50%) scale(0.9);
-  }
-}
-
-.project {
-  &:hover &arrow {
-    
-    &Top:after {
-      left: 0;
-      transition-delay: $transition-time;
-    }
-  
-    &Bottom:after {
-      right: 0;
-      transition-delay: 0s;
-    }
-  }
 }

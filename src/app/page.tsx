@@ -1,21 +1,49 @@
+'use client';
 import { SectionHeader } from '@/components/SectionHeader/SectionHeader';
 import styles from './page.module.scss';
 import data from '@/data.json';
 import Link from 'next/link';
 import { Projects } from '@/components/Projects/Projects';
+import { motion } from 'framer-motion';
 
 export default function Home() {
   console.log(data);
+  const container = {
+    hidden: { y: 20, opacity: 0 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        staggerChildren: 0.1,
+        duration: 0.5,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
   return (
-    <main className={styles.root}>
-      <section className={styles.about}>
+    <motion.main
+      className={styles.root}
+      variants={container}
+      initial='hidden'
+      animate='show'
+    >
+      <motion.section className={styles.about} variants={item}>
         <SectionHeader>
           <div className={styles.title}>
             <h1>Billy Lee</h1>
             <h2>Full Stack Developer</h2>
           </div>
         </SectionHeader>
-
         <div className={styles.introduction}>
           <p>
             I am a Math graduate from the University of Waterloo, and I am
@@ -33,8 +61,8 @@ export default function Home() {
             badminton or bouldering.
           </p>
         </div>
-      </section>
-      <section className={styles.experience}>
+      </motion.section>
+      <motion.section className={styles.experience} variants={item}>
         <SectionHeader>
           <h1>Experience</h1>
           <Link href='/experience'>See all experience</Link>
@@ -47,15 +75,15 @@ export default function Home() {
           </div>
           <div>{data.experience[0].description}</div>
         </div>
-      </section>
+      </motion.section>
 
-      <section className={styles.projects}>
+      <motion.section className={styles.projects} variants={item}>
         <SectionHeader>
           <h1>Projects</h1>
           <Link href='/projects'>See all projects</Link>
         </SectionHeader>
         <Projects projects={data.projects} numProjects={2} />
-      </section>
-    </main>
+      </motion.section>
+    </motion.main>
   );
 }
