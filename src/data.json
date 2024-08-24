@@ -23,5 +23,15 @@
         "Authored comprehensive tests using Jest and React Testing Library to ensure code integrity and functionality."
       ]
     }
+  ],
+  "projects": [
+    {
+      "name": "Instagram Clone",
+      "description": "A full-stack Instagram clone built with Next.js, Express.js, MongoDB, Socket.io, and Firebase Auth."
+    },
+    {
+      "name": "Coding Theory Calculator",
+      "description": "A web application that performs various coding theory calculations, including hamming distance, syndrome decoding, C24 decoding, and more."
+    }
   ]
 }
