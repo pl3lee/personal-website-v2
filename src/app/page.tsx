@@ -43,7 +43,7 @@ export default function Summary() {
             <h1>Billy Lee</h1>
             <h2>Full Stack Developer</h2>
           </div>
-          <Link href='/resume.pdf' className={styles.linkHover}>
+          <Link href='/resume.pdf' className={styles.linkHover} target='_blank'>
             View my Resume
           </Link>
         </SectionHeader>

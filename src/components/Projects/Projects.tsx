@@ -18,7 +18,8 @@ function Project({ project }: { project: ProjectType }) {
     <Link
       key={project.slug}
       className={styles.project}
-      href={`/projects/${project.slug}`}
+      href={project.link}
+      target='_blank'
     >
       <div className={styles.projectInfo}>
         <h2>{project.name}</h2>

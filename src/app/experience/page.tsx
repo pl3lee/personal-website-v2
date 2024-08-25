@@ -38,7 +38,7 @@ export default function ExperiencePage() {
       <motion.section className={styles.experience} variants={item}>
         <SectionHeader>
           <h1>Experience</h1>
-          <Link href='/resume.pdf' className={styles.linkHover}>
+          <Link href='/resume.pdf' className={styles.linkHover} target='_blank'>
             View my Resume
           </Link>
         </SectionHeader>
