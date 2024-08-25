@@ -3,9 +3,7 @@ import { SectionHeader } from '@/components/SectionHeader/SectionHeader';
 import styles from './page.module.scss';
 import data from '@/data.json';
 import Link from 'next/link';
-import { Projects } from '@/components/Projects/Projects';
 import { motion } from 'framer-motion';
-import { ChevronRight, Github, Linkedin } from 'lucide-react';
 
 export default function ExperiencePage() {
   const container = {
