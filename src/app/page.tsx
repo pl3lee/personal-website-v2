@@ -129,7 +129,7 @@ export default function Summary() {
               <Github />
             </Link>
             <Link
-              href='https://www.linkedin.com/in/billy-lee-9892a3200/'
+              href='https://www.linkedin.com/in/billy-pl-lee'
               target='_blank'
             >
               <Linkedin />
