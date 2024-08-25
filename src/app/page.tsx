@@ -8,7 +8,6 @@ import { motion } from 'framer-motion';
 import { Github, Linkedin } from 'lucide-react';
 
 export default function Summary() {
-  console.log(data);
   const container = {
     hidden: { y: 20, opacity: 0 },
     show: {
