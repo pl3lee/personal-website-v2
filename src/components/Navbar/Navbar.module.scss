@@ -26,6 +26,7 @@
   gap: 1rem;
   a {
     border-radius: 0.5rem;
+    padding: 0.5rem;
     transition: all 0.3s ease;
     &:hover {
       background-color: $hover-background-color;
@@ -37,5 +38,14 @@
 @media (max-width: $xs) {
   .root {
     padding: 2rem 1rem;
+  }
+  .linksContainer {
+    a {
+      padding: 0rem;
+      &:hover {
+        background-color: $background-color;
+        color: $foreground-color1;
+      }
+    }
   }
 }

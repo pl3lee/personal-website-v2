@@ -38,7 +38,9 @@ export default function ExperiencePage() {
       <motion.section className={styles.experience} variants={item}>
         <SectionHeader>
           <h1>Experience</h1>
-          <Link href='/resume.pdf'>View my Resume</Link>
+          <Link href='/resume.pdf' className={styles.linkHover}>
+            View my Resume
+          </Link>
         </SectionHeader>
         {data.experience.map((experience) => {
           return (

@@ -23,9 +23,10 @@
   }
 }
 
-
-
-
+.linkHover:hover {
+  transition: all 0.3s ease;
+  color: $foreground-color1;
+}
 
 .experience {
   width: 100%;

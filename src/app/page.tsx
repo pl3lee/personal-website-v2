@@ -43,7 +43,9 @@ export default function Summary() {
             <h1>Billy Lee</h1>
             <h2>Full Stack Developer</h2>
           </div>
-          <Link href='/resume.pdf'>View my Resume</Link>
+          <Link href='/resume.pdf' className={styles.linkHover}>
+            View my Resume
+          </Link>
         </SectionHeader>
         <div className={styles.introduction}>
           <p>
@@ -66,7 +68,9 @@ export default function Summary() {
       <motion.section className={styles.experience} variants={item}>
         <SectionHeader>
           <h1>Experience</h1>
-          <Link href='/experience'>See all experience</Link>
+          <Link href='/experience' className={styles.linkHover}>
+            See all experience
+          </Link>
         </SectionHeader>
         <div className={styles.latestExperienceContainer}>
           <div>
@@ -81,7 +85,9 @@ export default function Summary() {
       <motion.section className={styles.projects} variants={item}>
         <SectionHeader>
           <h1>Projects</h1>
-          <Link href='/projects'>See all projects</Link>
+          <Link href='/projects' className={styles.linkHover}>
+            See all projects
+          </Link>
         </SectionHeader>
         <Projects projects={data.projects.slice(0, 2)} />
       </motion.section>
@@ -89,7 +95,9 @@ export default function Summary() {
       <motion.section className={styles.education} variants={item}>
         <SectionHeader>
           <h1>Education</h1>
-          <Link href='/education'>See all education</Link>
+          <Link href='/education' className={styles.linkHover}>
+            See all education
+          </Link>
         </SectionHeader>
         <div className={styles.educationContainer}>
           <div>

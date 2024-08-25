@@ -56,7 +56,10 @@
   padding: 0rem 1rem;
 }
 
-
+.linkHover:hover {
+  transition: all 0.3s ease;
+  color: $foreground-color1;
+}
 
 .socialMediaIcons {
   display: flex;
