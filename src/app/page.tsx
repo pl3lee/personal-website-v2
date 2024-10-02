@@ -1,4 +1,3 @@
-'use client';
 import { SectionHeader } from '@/components/SectionHeader/SectionHeader';
 import styles from './page.module.scss';
 import data from '@/data.json';
@@ -8,36 +7,9 @@ import { motion } from 'framer-motion';
 import { Github, Linkedin } from 'lucide-react';
 
 export default function Summary() {
-  const container = {
-    hidden: { y: 20, opacity: 0 },
-    show: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        staggerChildren: 0.1,
-        duration: 0.5,
-      },
-    },
-  };
-
-  const item = {
-    hidden: { y: 20, opacity: 0 },
-    show: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.5,
-      },
-    },
-  };
   return (
-    <motion.main
-      className={styles.root}
-      variants={container}
-      initial='hidden'
-      animate='show'
-    >
-      <motion.section className={styles.about} variants={item}>
+    <>
+      <section className={styles.about}>
         <SectionHeader>
           <div className={styles.title}>
             <h1>Billy Lee</h1>
@@ -64,8 +36,8 @@ export default function Summary() {
             badminton or bouldering.
           </p>
         </div>
-      </motion.section>
-      <motion.section className={styles.experience} variants={item}>
+      </section>
+      <section className={styles.experience}>
         <SectionHeader>
           <h1>Experience</h1>
           <Link href='/experience' className={styles.linkHover}>
@@ -80,9 +52,9 @@ export default function Summary() {
           </div>
           <div>{data.experience[0].description}</div>
         </div>
-      </motion.section>
+      </section>
 
-      <motion.section className={styles.projects} variants={item}>
+      <section className={styles.projects}>
         <SectionHeader>
           <h1>Projects</h1>
           <Link href='/projects' className={styles.linkHover}>
@@ -90,9 +62,9 @@ export default function Summary() {
           </Link>
         </SectionHeader>
         <Projects projects={data.projects.slice(0, 2)} />
-      </motion.section>
+      </section>
 
-      <motion.section className={styles.education} variants={item}>
+      <section className={styles.education}>
         <SectionHeader>
           <h1>Education</h1>
           <Link href='/education' className={styles.linkHover}>
@@ -113,9 +85,9 @@ export default function Summary() {
             <div className='text-sm'>Sept 2020 - Aug 2024</div>
           </div>
         </div>
-      </motion.section>
+      </section>
 
-      <motion.section className={styles.connect} variants={item}>
+      <section className={styles.connect}>
         <SectionHeader>
           <h1>Let&apos;s Connect</h1>
         </SectionHeader>
@@ -136,7 +108,7 @@ export default function Summary() {
             </Link>
           </div>
         </div>
-      </motion.section>
-    </motion.main>
+      </section>
+    </>
   );
 }

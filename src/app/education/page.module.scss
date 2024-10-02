@@ -1,23 +1,6 @@
 @import '/src/app/breakpoints';
 @import '/src/app/theme.scss';
 
-.root {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: $md;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  gap: 4rem;
-  width: 100%;
-
-  section {
-    width: 100%;
-    padding: 1rem;
-  }
-}
-
-
 .education {
   width: 100%;
   display: flex;
