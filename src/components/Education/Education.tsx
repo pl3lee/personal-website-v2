@@ -9,7 +9,7 @@ export function Education() {
         <div>
           <h2>Georgia Institute of Technology</h2>
           <div className='text-sm'>Master of Science in Computer Science</div>
-          <div className='text-sm'>Expected Aug 2027</div>
+          <div className='text-sm'>Expected Jun 2026</div>
         </div>
       </div>
       <div className={styles.educationContainer}>
