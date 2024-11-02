@@ -1,6 +1,4 @@
-@import '/src/app/theme';
-@import '/src/app/breakpoints';
-@import '/src/app/mixins';
+@import '/src/app/_shared.scss';
 
 .education {
   @include container;

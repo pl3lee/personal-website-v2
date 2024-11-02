@@ -1,6 +1,4 @@
-@import '/src/app/theme';
-@import '/src/app/breakpoints';
-@import '/src/app/mixins';
+@import '/src/app/_shared.scss';
 
 .linkHover:hover {
   transition: all 0.3s ease;
@@ -19,7 +17,7 @@
 }
 
 .experienceKeypoints {
-  @include flex-column;
+  @include flex(column);
   width: 100%;
   gap: 0.5rem;
 }

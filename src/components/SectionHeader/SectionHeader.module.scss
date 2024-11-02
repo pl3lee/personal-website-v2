@@ -1,9 +1,7 @@
-@import '/src/app/theme.scss';
-@import '/src/app/breakpoints.scss';
+@import '/src/app/_shared.scss';
 
 .root {
-  display: flex;
+  @include flex(row);
   width: 100%;
-  flex-direction: row;
   justify-content: space-between;
 }

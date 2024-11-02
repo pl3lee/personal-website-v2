@@ -1,9 +1,7 @@
-@import '/src/app/theme';
-@import '/src/app/breakpoints';
-@import '/src/app/mixins';
+@import '/src/app/_shared.scss';
 
 .educationContainer {
-  @include flex-column;
+  @include flex(column);
   padding: 0 1rem 1.5rem;
 
   h2 {
@@ -12,6 +10,6 @@
 }
 
 .detailsContainer {
-  @include flex-column;
+  @include flex(column);
   gap: 0.25rem;
 }

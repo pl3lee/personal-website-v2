@@ -1,10 +1,10 @@
-@mixin flex-column {
+@mixin flex($direction: row) {
   display: flex;
-  flex-direction: column;
+  flex-direction: $direction;
 }
 
 @mixin container {
   width: 100%;
-  @include flex-column;
+  @include flex(column);
   align-items: flex-start;
 }

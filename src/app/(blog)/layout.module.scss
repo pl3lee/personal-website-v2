@@ -1,5 +1,4 @@
-@import '/src/app/breakpoints';
-@import '/src/app/theme.scss';
+@import '/src/app/_shared.scss';
 
 .root {
   max-width: $md;
