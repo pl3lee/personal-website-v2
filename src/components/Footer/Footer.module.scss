@@ -1,8 +1,7 @@
-@import '/src/app/theme.scss';
-@import '/src/app/breakpoints.scss';
+@import '/src/app/_shared.scss';
 
 .root {
-  display: flex;
+  @include flex(row);
   height: 100%;
   width: 100%;
   justify-content: center;
@@ -11,10 +10,9 @@
 }
 
 .footerContainer {
-  display: flex;
+  @include flex(row);
   max-width: $md;
   width: 100%;
-  flex-direction: row;
   justify-content: flex-start;
   align-items: flex-end;
   font-size: 0.9rem;

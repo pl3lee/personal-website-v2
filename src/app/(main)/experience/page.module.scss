@@ -1,0 +1,46 @@
+@import '/src/app/_shared.scss';
+
+.linkHover:hover {
+  transition: all 0.3s ease;
+  color: $foreground-color1;
+}
+
+.experience {
+  @include container;
+  gap: 5rem;
+}
+
+.experienceContainer {
+  @include container;
+  gap: 1.5rem;  
+  padding: 0 1rem;
+
+  .description { 
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: $foreground-color3;
+  }
+
+  > div:first-child {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.experienceKeypoints {
+  @include flex(column);
+  width: 100%;
+  gap: 0.75rem;  
+  
+  li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: $foreground-color3;
+    display: flex;
+    gap: 0.5rem;
+    
+    &:before {
+      content: ">";  
+      color: $foreground-color2;
+    }
+  }
+}

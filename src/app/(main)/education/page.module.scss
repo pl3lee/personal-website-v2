@@ -1,13 +1,10 @@
-@import '/src/app/breakpoints';
-@import '/src/app/theme.scss';
+@import '/src/app/_shared.scss';
 
-
-.projects {
+.education {
+  @include container;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
 }
-
-

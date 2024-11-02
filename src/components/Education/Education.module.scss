@@ -1,0 +1,15 @@
+@import '/src/app/_shared.scss';
+
+.educationContainer {
+  @include flex(column);
+  padding: 0 1rem 1.5rem;
+
+  h2 {
+    padding-bottom: 0.25rem;
+  }
+}
+
+.detailsContainer {
+  @include flex(column);
+  gap: 0.25rem;
+}

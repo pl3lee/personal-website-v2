@@ -23,10 +23,12 @@ export default function ExperiencePage() {
               <div className='text-sm'>{experience.position}</div>
               <div className='text-sm'>{experience.date}</div>
             </div>
-            {experience.description && <div>{experience.description}</div>}
+            {experience.description && (
+              <div className={styles.description}>{experience.description}</div>
+            )}
             <ul className={styles.experienceKeypoints}>
               {experience.keypoints.map((keypoint) => {
-                return <li key={keypoint}>&gt; {keypoint}</li>;
+                return <li key={keypoint}>{keypoint}</li>;
               })}
             </ul>
           </div>

@@ -1,15 +1,23 @@
-@import '/src/app/breakpoints';
-@import '/src/app/theme.scss';
+@import '/src/app/_shared.scss';
 
 .root {
-  display: flex;
-  flex-direction: column;
+  @include flex(column);
   width: 100%;
 }
 
+.projectRow {
+  @include flex(row);
+  width: 100%;
+  padding: 1rem;
+}
+
+.socialMediaIcons {
+  @include flex(row);
+  gap: 1rem;
+}
+
 .project {
-  display: flex;
-  flex-direction: row;
+  @include flex(row);
   width: 100%;
   padding: 1rem;
   border-radius: 5px;
@@ -47,7 +55,6 @@
 }
 
 .projectInfo {
-  display: flex;
-  flex-direction: column;
+  @include flex(column);
   width: 95%;
 }

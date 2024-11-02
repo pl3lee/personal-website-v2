@@ -1,0 +1,9 @@
+@import '/src/app/_shared.scss';
+
+
+.projects {
+  @include container;
+  gap: 2rem;
+}
+
+

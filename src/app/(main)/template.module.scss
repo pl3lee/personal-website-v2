@@ -1,9 +1,7 @@
-@import '/src/app/breakpoints';
-@import '/src/app/theme.scss';
+@import '/src/app/_shared.scss';
 
 .root {
-  display: flex;
-  flex-direction: column;
+  @include flex(column);
   align-items: center;
   max-width: $md;
   padding-top: 8rem;

@@ -1,8 +1,7 @@
-@import '/src/app/theme.scss';
-@import '/src/app/breakpoints.scss';
+@import '/src/app/_shared.scss';
 
 .root {
-  display: flex;
+  @include flex(row);
   position: fixed;
   top: 0;
   left: 0;
@@ -17,10 +16,9 @@
 
 
 .linksContainer {
-  display: flex;
+  @include flex(row);
   max-width: $md;
   width: 100%;
-  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   gap: 1rem;
