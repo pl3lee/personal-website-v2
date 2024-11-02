@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import '/src/app/theme.scss';
+@import './mixins';
 
 * {
   box-sizing: border-box;

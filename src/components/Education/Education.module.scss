@@ -1,11 +1,10 @@
+@import '/src/app/theme';
 @import '/src/app/breakpoints';
-@import '/src/app/theme.scss';
+@import '/src/app/mixins';
 
 .educationContainer {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 1.5rem;
-  padding-left: 1rem;
+  @include flex-column;
+  padding: 0 1rem 1.5rem;
 
   h2 {
     padding-bottom: 0.25rem;
@@ -13,7 +12,6 @@
 }
 
 .detailsContainer {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   gap: 0.25rem;
 }

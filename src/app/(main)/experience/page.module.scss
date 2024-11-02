@@ -1,5 +1,6 @@
+@import '/src/app/theme';
 @import '/src/app/breakpoints';
-@import '/src/app/theme.scss';
+@import '/src/app/mixins';
 
 .linkHover:hover {
   transition: all 0.3s ease;
@@ -7,26 +8,18 @@
 }
 
 .experience {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  @include container;
   gap: 5rem;
 }
 
 .experienceContainer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: flex-start;
-  align-items: flex-start;
+  @include container;
   gap: 2rem;
-  padding: 0rem 1rem;
+  padding: 0 1rem;
 }
 
 .experienceKeypoints {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  @include flex-column;
   width: 100%;
+  gap: 0.5rem;
 }
