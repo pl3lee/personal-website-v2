@@ -40,6 +40,16 @@
         "Revolutionized product management by developing a Python-based automation tool using Selenium for the company's WordPress e-commerce site; achieved a remarkable 99% reduction in time required for bulk price updates.",
         "Managed the company's server system by configuring the VPN server and upgrading the storage of the NAS server."
       ]
+    },
+    {
+      "company": "University of Waterloo",
+      "position": "Full Stack Developer",
+      "date": "Jan 2023 - Apr 2023",
+      "keypoints": [
+        "Created responsive and intuitive user interface using Next.js and Material-UI.",
+        "Migrated the existing codebase from Ant Design to Material-UI, enhancing the user experience and improving the overall design.",
+        "Authored comprehensive tests using Jest and React Testing Library to ensure code integrity and functionality."
+      ]
     }
   ],
   "projects": [

@@ -35,12 +35,28 @@
   gap: 2rem;
 }
 
-
 .latestExperienceContainer, .educationContainer, .connectContainer {
   justify-content: flex-start;
   @include container;
   gap: 1rem;
   padding: 0rem 1rem;
+}
+
+.latestExperienceContainer {
+  justify-content: flex-start;
+  @include container;
+  gap: 1.5rem;
+  padding: 0rem 1rem;
+
+  .description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: $foreground-color3;
+  }
+
+  > div:first-child {
+    margin-bottom: 0.5rem;
+  }
 }
 
 .linkHover:hover {

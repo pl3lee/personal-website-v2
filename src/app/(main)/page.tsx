@@ -42,17 +42,21 @@ export default function Summary() {
         <SectionHeader>
           <h1>Experience</h1>
           <Link href='/experience' className={styles.linkHover}>
-            See all experience
+            See details
           </Link>
         </SectionHeader>
-        <div className={styles.latestExperienceContainer}>
-          <div>
-            <h2>{data.experience[0].company}</h2>
-            <div className='text-sm'>{data.experience[0].position}</div>
-            <div className='text-sm'>{data.experience[0].date}</div>
+        {data.experience.map((experience) => (
+          <div
+            className={styles.latestExperienceContainer}
+            key={`${experience.company}-${experience.position}`}
+          >
+            <div>
+              <h2>{experience.company}</h2>
+              <div className='text-sm'>{experience.position}</div>
+              <div className='text-sm'>{experience.date}</div>
+            </div>
           </div>
-          <div>{data.experience[0].description}</div>
-        </div>
+        ))}
       </section>
 
       <section className={styles.projects}>
