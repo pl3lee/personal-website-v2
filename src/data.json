@@ -54,16 +54,22 @@
   ],
   "projects": [
     {
+      "name": "UWPlan",
+      "description": "A degree planning web application for University of Waterloo students, built with Next.js, Tailwind CSS, shadcn/ui, Auth.js, Drizzle ORM, and PostgreSQL. Serves 500+ users daily.",
+      "slug": "uwplan",
+      "link": "https://github.com/pl3lee/uwplan"
+    },
+    {
+      "name": "Coding Theory Calculator",
+      "description": "A web application that performs various coding theory calculations, including hamming distance, syndrome decoding, C24 decoding, and more. Serves 50+ users daily.",
+      "slug": "coding-theory-calculator",
+      "link": "https://github.com/pl3lee/coding-theory-calculator"
+    },
+    {
       "name": "Instagram Clone",
       "description": "A full-stack Instagram clone built with Next.js, Express.js, MongoDB, Socket.io, and Firebase Auth.",
       "slug": "instagram-clone",
       "link": "https://github.com/pl3lee/instagram-clone"
-    },
-    {
-      "name": "Coding Theory Calculator",
-      "description": "A web application that performs various coding theory calculations, including hamming distance, syndrome decoding, C24 decoding, and more.",
-      "slug": "coding-theory-calculator",
-      "link": "https://github.com/pl3lee/coding-theory-calculator"
     },
     {
       "name": "Sai Kung Sailing",
