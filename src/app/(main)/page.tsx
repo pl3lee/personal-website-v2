@@ -1,11 +1,10 @@
-import { SectionHeader } from '@/components/SectionHeader/SectionHeader';
-import styles from './page.module.scss';
-import data from '@/data.json';
-import Link from 'next/link';
-import { Projects } from '@/components/Projects/Projects';
-import { motion } from 'framer-motion';
-import { Github, Linkedin } from 'lucide-react';
 import { Education } from '@/components/Education/Education';
+import { Projects } from '@/components/Projects/Projects';
+import { SectionHeader } from '@/components/SectionHeader/SectionHeader';
+import data from '@/data.json';
+import { Github, Linkedin } from 'lucide-react';
+import Link from 'next/link';
+import styles from './page.module.scss';
 
 export default function Summary() {
   return (
@@ -26,6 +25,17 @@ export default function Summary() {
             currently working on my Master&apos;s in Computer Science at Georgia
             Tech. As an aspiring full-stack developer with a deep passion for
             technology, I constantly seek opportunities to innovate and learn.
+          </p>
+          <p>
+            My enthusiasm for solving real-world problems led me to create{' '}
+            <span className='text-blue-400'>
+              <a href='https://uwplan.com' target='_blank'>
+                UWPlan
+              </a>
+            </span>
+            , a Next.js-powered degree planning tool that serves over 500 daily
+            users, helping students map their courses and visualize their
+            academic progress.
           </p>
           <p>
             I love to tinker with technology. I built a home server using{' '}
